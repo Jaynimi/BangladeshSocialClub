@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registration Page</title>
+  <style>
+    html, body {
+  height: 100%;
+  width: 100%;
+}
+    * {
+      box-sizing: border-box;
+      width: 100%;
+    }
+
+    body {
+      background: url("https://browngirlmagazine.com/wp-content/uploads/2016/07/Untitled-design-16-768x384.jpg") no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    main {
+      background-color: rgba(0, 0, 0, 0.6);
+      width: 45%;
+      margin-top: 2em;
+      padding: 2em;
+      border-radius: 50px;
+    }
+
+    form {
+      text-align: center;
+      color: white;
+      line-height: 2em;
+    }
+    
+    h2 {
+      font-size: 27px;
+      letter-spacing: .5em;
+    }
+    
+    .contact input[type="text"], input[type="password"], input[type="tel"] {
+      border-radius: 50px;
+      padding: 1em;
+      margin-bottom: 1.5em;
+      user-select: none;
+      
+    }
+    
+    .contact input:focus {
+      outline: none;
+      border-color: red;
+      border-style: solid;
+    }
+
+  
+    .fname {
+       float: left;
+       width: 48%;
+     }
+
+    .lname {
+      float: right;
+      width: 48%;
+    }
+
+    p,a {
+      font-size: 15px;
+    }
+
+/*     .checkboxy {
+      display: block;
+      position: static;
+      clear: both;
+    }
+    
+    .checkboxy input[type=checkbox] {
+      float: left;
+      margin-right: 10px;
+      margin-top: 3px;  
+    }*/
+
+    label .terms {
+      float: left;
+      font-size: 14px;
+      font-style: italic;
+      position: relative;
+    } 
+    
+    
+    button {
+      width: 50%;
+      border-radius: 50px;
+      background-color: green;
+      color: white;
+      padding: .5em;
+      font-size: 20px;
+      cursor: pointer;
+      
+    }
+
+    button:hover {
+      opacity: 0.7;
+    }
+    
+  </style>
+</head>
+<body>
+  <main>
+    <form action="registration.html" method="get">
+      <h2>REGISTER</h2>
+      <div class="contact">
+        <input type="text" class="fname" placeholder="First Name" id="fname" required>
+        <input type="text" class="lname" placeholder="Last Name" id="lname" required>
+        <input type="text" class="email" placeholder="Email" id="email" required>
+        <input type="tel" class="phone" placeholder="Phone Number" id="phone" required>
+        <input type="password" class=pwd placeholder="Password" id="pwd" required>
+        <input type="password" class="conpwd" placeholder="Confirm Password" id="conpwd" required>
+      </div>
+      <hr>
+      <label class="terms">
+        <input type="checkbox" name="term" id="term"> I accept Term & Privacy <br>
+      </label>
+<!--       <div class="checkboxy">
+        <input type="checkbox" name="term" id="term" value="yes">
+        <label class="terms">I accept <a href="#" style="color:green;font-weight: bold;">Terms & Privacy</a></label>
+      </div> -->
+      <div>
+        <button type="submit" class="registerbn" id="register" value="register">REGISTER NOW </button>
+      </div>
+      <p>Already have an account? <a href="#" style="color:green;font-weight: bold;">Sign In </a></p>
+    </form>
+  </main>
+  <script>
+    const $ = selector => document.querySelector(selector);
+
+    const processEntries = () => {
+      const phone = $("#phone");
+      const term = $("#term");
+
+      const emailPattern  = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}\b/;
+      const email = $("#email");
+      
+      const password = $("#pwd"); 
+      const conpwd = $("#conpwd");
+
+      let isValid = true;
+
+      if (email.value == "") {
+        alert ("Email Is Required.");
+        isValid = false;
+      } else if (!emailPattern.test(email)) {
+        alert("Must be a valid email address.");
+        isValid = false;
+      }
+      $("#email").val(email);
+      
+      if (password == "") {
+        isValid = false;
+        alert ("Password Is Required.");
+      } else if (password.length < 6) {
+        isValid = false;
+        alert("Password must be 6 or more characters.");
+      }
+      $("#pwd").val(password);
+      
+      if (conpwd == "") {
+        isValid = false;
+        alert ("Confirm Password Is Required.");
+      } else if (password != conpwd) {
+        isValid = false;
+        alert("Password Must Be Matched.");
+      }
+      $("#conpwd").val(conpwd);
+     
+
+      if (term.checked == false) {
+        isValid = false;
+        alert("The Box Must Be Checked.");
+      }
+      
+      if (isValid == true){
+        $("form").submit();
+        alert("Register Successfully!!!!");
+      } else {
+        // prevent the submission of the form if any entries are valid
+        event.preventDefault();
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      $("#register").addEventListener("click",processEntries);
+    }
+      
+                             )
+  </script>
+</body>

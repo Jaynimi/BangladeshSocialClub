@@ -1,0 +1,389 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .general-div {
+    width: 100%;
+    height: 100%;
+  }
+
+  
+  #carousel{
+    height:500px;
+    top:22px;
+  }
+  
+  #menu{
+    display:flex;
+    justify-content: space-around;
+  }
+  
+  .nav-link active{
+    text-align: right;
+  }
+  
+  .buttons{
+    display:flex;
+    justify-content: space-around;
+  }
+  
+  .button2 { 
+    background-color: red; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+  
+  }
+  
+  .button1 { 
+    background-color: #318e25; 
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 20px; 
+    width: 400px;
+    white-space: nowrap;
+  }
+  
+  .button3 { 
+    background-color: #00ff9d; 
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    width:400px;
+    white-space: nowrap;
+  }
+  
+  .display_things {
+    align-content: left;
+    margin: 10px;
+    background-color: lawngreen;
+    display: none; 
+    width: 1100px;
+    position: absolute;
+    z-index: 10000;
+  }
+  
+  .button3:hover ~ .display_things{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .button4 { 
+    background-color: #f4740b; 
+    border: none;
+    color: white;
+    padding: 15px 170px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    width:400px;
+  }
+  
+  .button:hover{
+    background-color: green;
+    
+  }
+  
+  
+  td{
+    text-align: center;
+  }
+  
+  th{
+    text-align:center;
+  }
+  
+  #top{
+    background-color: #44841a;
+    background-attachment: false;
+    height:500px;
+  }
+  
+  /*                Top               */
+  .slide-show {
+    width: 100%;
+    height: 500px;
+  }
+  h1 {
+    font-size: 48px;
+    color: white;
+    margin-top: 125px;
+  }
+  
+  h4 {
+    margin-left: 10em;
+    margin-right: 10em;
+    font-size: 24px;
+    color: white;
+  }
+  
+  a {
+    padding: 10px 29px;
+    background-color: green;
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 3em;
+    font-size: 24px;
+  }
+  
+  a:hover {
+    color: black;
+    opacity: 0.7;
+  }
+  
+  #mySlider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .singleSlide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 100%;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    line-height: 10em;
+    height: 100%;
+  }
+  
+  .slideOverlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-top: 50px;
+    height: 100%;
+  }
+  
+  #sliderNav {
+    position: relative;
+    top: -250px;
+  }
+  
+  #sliderNav:hover {
+    cursor: pointer;
+  }
+  
+  #sliderPrev {
+    position: relative;
+    float: left;
+    left: 50px;
+  }
+  
+  #sliderNext {
+    position: relative;
+    float: right;
+    right: 50px;
+  }
+  
+  #sliderNext img,
+  #sliderPrev img {
+    width: 32px;
+    filter: grayscale(1) invert(1);
+   
+  }
+  
+  @-webkit-keyframes slideIn {
+    100% {
+      left: 0;
+    }
+  }
+  
+  @keyframes slideIn {
+    100% {
+      left: 0;
+    }
+  }
+  
+  .slideInRight {
+    left: -100%;
+    -webkit-animation: slideIn 1s forwards;
+    animation: slideIn 1s forwards;
+  }
+  
+  .slideInLeft {
+    left: 100%;
+    -webkit-animation: slideIn 1s forwards;
+    animation: slideIn 1s forwards;
+  }
+  
+  @-webkit-keyframes slideOutLeft {
+    100% {
+      left: -100%;
+    }
+  }
+  
+  @keyframes slideOutLeft {
+    100% {
+      left: -100%;
+    }
+  }
+  
+  .slideOutLeft {
+    -webkit-animation: slideOutLeft 1s forwards;
+    animation: slideOutLeft 1s forwards;
+  }
+  
+  @-webkit-keyframes slideOutRight {
+    100% {
+      left: 100%;
+    }
+  }
+  
+  @keyframes slideOutRight {
+    100% {
+      left: 100%;
+    }
+  }
+  
+  .slideOutRight {
+    -webkit-animation: slideOutRight 1s forwards;
+    animation: slideOutRight 1s forwards;
+  }
+  /* #button can come here soon! */
+  
+  #bangladesh{
+    margin:10px;
+    display:block;
+    font-family: Arial Black;
+    font-size: 40px;
+    font-smooth: true;
+    font-style:italic;
+    
+  }
+  
+  /* Event Section */
+  #events{
+    height:400px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #sub{
+    position:absolute;
+    margin: 10px;
+  }
+  
+  .card{
+    margin-top: 2em;
+    height: 350px;
+  }
+  
+  .card .card-text {
+    margin-bottom: 3em;
+  }
+  
+  .card .card-text, .card-subtitle {
+    margin-top: .6em;
+  }
+  
+  /* Registration Form  */
+.form-general-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+.animate__animated {
+    display: flex;
+    flex-direction: column;
+}
+
+  .form-control{
+    margin: 5px 0px 8px 0px;
+    border: 1px solid green;
+    width: 80%;
+  }
+  
+  .formGroupExampleInput {
+    margin: 10px 0;
+  }
+  
+  .form-control:hover{
+    border: 2px solid black;
+  }
+  
+  #join_button{
+    
+    color: green;
+    width: 20%;
+    height: 8vh;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    background-color: orange;
+    font-size: 1.4vw;
+    border-radius: 15px;
+    margin:0px;
+    border-width: 1px;
+  }
+  
+  label{
+    margin: 10px 10px 0px 0px;
+    padding: 5px 5px 5px 0px;
+    font-size: large;
+    font-weight: 600;
+  }
+  
+  #join_button:hover{
+    background-color: blue;
+  }
+  
+  #contact{
+    height: 200px;
+    background-color: #8B0000;
+    } 
+  
+  #writing{
+    margin:10px;
+    font-size: 30px;
+    color: green;
+    font-weight: bold;
+  }
+  
+  #fb{
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  #fb_container{
+    width:50px;
+    height:50px;
+  }
+  
+  #container_fb_container{
+    position: relative;
+    left:700px;
+    top:98px;
+    align-content: center;
+  }
+  

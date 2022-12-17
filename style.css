@@ -21,9 +21,37 @@ body {
     display:flex;
     justify-content: space-around;
   }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
   
   .nav-link active{
     text-align: right;
+  }
+
+  .container-fluid {
+    width: auto;
+    height: 10%;
+    margin: 0;
+    justify-items: center;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .navbar-nav a {
+    margin: 1rem 1rem 1rem 1rem;
+  }
+
+  .nav-link {
+    color: green;
   }
   
   .buttons{
@@ -43,6 +71,7 @@ body {
     margin: 10px;
   
   }
+
   
   .button1 { 
     background-color: #318e25; 
@@ -143,17 +172,52 @@ body {
   
   a {
     padding: 10px 29px;
-    background-color: green;
-    color: #fff;
+    background-color: white;
+    color: green;
     border-radius: 25px;
     text-decoration: none;
     margin-top: 3em;
-    font-size: 24px;
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  #card-link {
+    color: white;
+    background-color: green;
+  }
+
+  .navbar-light .navbar-brand{
+    color: green;
+    font-size: 250%;
+    background-color: white;
+    color: green;
+    font-weight: bolder;
+    border-radius: 15px;
+  } 
+  
+  
+  .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link {
+    color: green;
+    background-color: white;
+    color: green;
+    font-weight: bolder;
+    border-radius: 15px;
+  }
+
+  .navbar-light .navbar-brand:hover, .navbar-light .navbar-nav .nav-link.active:hover, .navbar-light .navbar-nav .nav-link:hover  {
+    color: white;
+    opacity: 0.4;
+    background-color: green;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: green;
   }
   
   a:hover {
-    color: black;
+    color: whitesmoke;
     opacity: 0.7;
+    background-color: green;
   }
   
   #mySlider {
@@ -334,7 +398,7 @@ body {
   #join_button{
     
     color: green;
-    width: 20%;
+    width: 45%;
     height: 8vh;
     display: inline-block;
     text-align: center;
@@ -345,6 +409,15 @@ body {
     border-radius: 15px;
     margin:0px;
     border-width: 1px;
+  }
+
+  .join_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    justify-items: center;
+    margin-left: 25%;
   }
   
   label{
@@ -386,4 +459,80 @@ body {
     top:98px;
     align-content: center;
   }
+  
+
+
+
+
+
+
+/**
+  .mobile-container {
+    display: none;
+  }
+  
+ 
+  @media only screen and (max-width: 768px) {
+    .mobile-container {
+      max-width: 480px;
+      margin: auto;
+      background-color: white;
+      height: auto;
+      color: white;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    
+    .topnav {
+      overflow: hidden;
+      background-color: white;
+      position: relative;
+    }
+    
+    .topnav #myLinks {
+      display: none;
+    }
+    
+    .topnav a {
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+    }
+    
+    .topnav a.icon {
+      background: white;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .mobile-container a.icon {
+      color: #555;
+    }
+    
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    .active {
+      
+      color: #555;
+    }
+
+    .nav-keys {
+      color: white;
+    }
+
+    .myLinks {
+      position: relative;
+    }
+  }
+  ***/
+
   

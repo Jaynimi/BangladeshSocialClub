@@ -459,8 +459,43 @@ body {
     top:98px;
     align-content: center;
   }
-  
 
+  .toggle-container {
+    height: auto;
+    width: 100%;
+    position: absolute;
+    background-color: green;
+    z-index: 1;
+    transition: 0.5s ease;
+    transform: translateX(0);
+    text-align: right;
+  }
+
+  .toggle-container ul li {
+    margin-top: 8vh;
+  }
+
+  .menu-head {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .nav-bg {
+      display: none;
+    }
+  }
+
+  @media only screen and (min-width: 769px) {
+    .nav-sm {
+      display: none;
+    }
+  }
 
 
 

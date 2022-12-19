@@ -467,7 +467,7 @@ body {
     background-color: green;
     z-index: 1;
     transition: 0.5s ease;
-    transform: translateX(0);
+    transform: translateX(-100%);
     text-align: right;
   }
 
@@ -482,7 +482,73 @@ body {
     padding: 30px;
     text-transform: uppercase;
     text-align: center;
-    
+    background: linear-gradient(30deg,#f4740b,#8b0000);
+  }
+
+  .toggle-container ul {
+    width: 100%;
+    list-style: none;
+    margin: 0 5% 0 0;
+    padding-left: 0;
+  }
+
+  .toggle-container ul li {
+    display: block;
+    width: 100%;
+    margin: 3% 0;
+  }
+
+  .toggle-container ul li a {
+    color: white;
+    padding: 2% 8% 2% 8%;
+    background-color: green;
+    text-decoration: none;
+    display: block;
+    font-size: 24px;
+    letter-spacing: 1px;
+    position: relative;
+    transition: 0.3s;
+    overflow: hidden;
+    text-transform: capitalize;
+    margin: 0;
+  }
+
+  .toggle-container ul li:hover a{
+    background: #f4740b;
+    color: #44841a;
+    width: 100%;
+    border-radius: 0;
+    letter-spacing: 4px;
+  }
+
+  .toggle-input {
+    appearance: none;
+    visibility: hidden;
+    display: none;
+  }
+
+  .toggle-span {
+    position: absolute;
+    right: -40px;
+    top: 30px;
+    font-size: 25px;
+    border-radius: ;
+    color: #fff;
+    padding: 3px 8px;
+    cursor: pointer;
+    background: #000;  
+  }
+
+  #bars, #bars2, #bars3, .bar {
+    background: white;
+  }
+
+  #check:checked ~ .toggle-container {
+    transform: translateX(100%);
+  }
+
+  #check:checked .toggle-container .bars {
+    display: none;
   }
   
   @media only screen and (max-width: 768px) {

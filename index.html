@@ -66,9 +66,44 @@
 
             <div class="nav-sm">
                 <nav>
-                    <div>
-                        <a class="navbar-brand" href="#">Bangladesh Social Club</a>
+                    <div id="side-menu" class="toggle-container">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="main-menu">
+                            <h2 class="menu-head">BSC Muscat</h2>
+                            <ul>
+                                <li>
+                                    <a href="#">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+    
+                            </ul>
+                        </div>
                     </div>
+
+                    <div id="content-area" class="content-area">
+                        <span style="font-size: 30px; cursor: pointer;" onclick="openNav()">&#9776;</span>
+                        <div class="navbar-brand content-text">
+                            <h2>Bangladesh Social Club</h2>
+                        </div>
+                    </div>
+
+                    <script>
+
+                        function openNav(){
+                            document.getElementById("side-menu").style.width = "300px";
+                            document.getElementById("content-area").style.width = "300px";
+                        }
+
+                        function closeNav(){
+                            document.getElementById("side-menu").style.width = "0";
+                            document.getElementById("content-area").style.width = "0";
+                        }
+
+                    </script>
+
+                    <!--
                     <input class="toggle-input" type="checkbox" name="" id="toggle-checkbox">
                     <div class="toggle-container">
                         <label for="toggle-checkbox">
@@ -91,6 +126,7 @@
 
                         </ul>
                     </div>
+                -->
                 </nav>
             </div>
             <!-- end of the nav bar  -->

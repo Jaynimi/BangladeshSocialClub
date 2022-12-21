@@ -461,14 +461,73 @@ body {
   }
 
   .toggle-container {
-    height: auto;
-    width: 100%;
-    position: absolute;
+    height: 100%;
+    width: 0%;
+    position: fixed;
     background-color: green;
     z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
     transition: 0.5s ease;
-    transform: translateX(-100%);
+    transform: translateX();
     text-align: right;
+  }
+
+  .toggle-container a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: bold;
+  }
+
+  .toggle-container .closebtn {
+    position: relative;
+    top: 0;
+    margin: 0;
+    right: 25px;
+    font-size: 50px;
+    margin-left: 50px;
+    color: #8B0000;
+    background: green;
+
+  }
+
+  #content-area {
+    transition: margin-left 0.5s;
+    padding: 16px;
+  }
+
+  .content-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .content-text h2 {
+    text-transform: uppercase;
+    color: green;
+    font-weight: bolder;
+  }
+
+  .content-text h2:hover {
+    color: white;
+    background: green;
+    border-radius: 5px;
+    opacity: 70%;
+    text-align: center;
+   
+  }
+
+
+  .navbars {
+    font-size: 30px;
+    cursor: pointer;
   }
 
   .toggle-container ul li {
@@ -521,11 +580,13 @@ body {
     letter-spacing: 4px;
   }
 
+  /*
   .toggle-input {
     appearance: none;
     visibility: hidden;
     display: none;
   }
+*/
 
   .toggle-span {
     position: absolute;
@@ -543,6 +604,8 @@ body {
     background: white;
   }
 
+  /*
+
   #check:checked ~ .toggle-container {
     transform: translateX(100%);
   }
@@ -550,6 +613,8 @@ body {
   #check:checked .toggle-container .bars {
     display: none;
   }
+*/
+
   
   @media only screen and (max-width: 768px) {
     .nav-bg {

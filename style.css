@@ -607,18 +607,10 @@ body {
     background: white;
   }
 
-  /*
-
-  #check:checked ~ .toggle-container {
-    transform: translateX(100%);
+  .ourEvents {
+     background: url("img/bang.jpg");
   }
 
-  #check:checked .toggle-container .bars {
-    display: none;
-  }
-*/
-
-  
   @media only screen and (max-width: 768px) {
     .nav-bg {
       display: none;

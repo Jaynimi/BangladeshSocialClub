@@ -606,9 +606,47 @@ body {
   #bars, #bars2, #bars3, .bar {
     background: white;
   }
+  
 
   .ourEvents {
      background: url("img/bang.jpg");
+     background-repeat: no-repeat;
+     background-size: 100% auto;
+     height: 60vh;
+     display: block;
+     display: flex;
+     flex-direction: column;
+     color: white;
+     text-transform: capitalize;
+     text-align: center;
+     align-items: center;
+     justify-content: center;    
+  }
+
+  .ourEventsText {
+    margin: 0;
+    height: 10%;
+  }
+
+  .ourEventsText:hover {
+    cursor: pointer;
+  }
+
+  .eventsSection {
+    display: grid;
+    grid-template-rows: ;
+    grid-template-columns: 27% 27% 27%;
+    justify-content: space-between;
+    margin: 8%;
+  }
+
+  .eventsDiv {
+    width: ;
+    margin: 0 3%;
+  }
+
+  .eventsImg {
+    width: 100%;
   }
 
   @media only screen and (max-width: 768px) {

@@ -635,19 +635,45 @@ body {
   .eventsSection {
     display: grid;
     grid-template-rows: ;
-    grid-template-columns: 27% 27% 27%;
+    grid-template-columns: 30% 30% 30%;
     justify-content: space-between;
-    margin: 8%;
+    margin: 8% 5%;
   }
 
   .eventsDiv {
     width: ;
-    margin: 0 3%;
+    margin-bottom: 24%;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
   }
 
   .eventsImg {
     width: 100%;
+    height: 47%;
   }
+
+  .eventsSection .eventsDiv :nth-child(6) {
+    margin-bottom: 0;
+    padding-bottom: 6%;
+    height: 10%;
+  }
+
+  .eventsSection .eventsDiv a {
+    padding: 0;
+    margin: 0;
+  }
+
+  .eventsSection .eventsDiv a button {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    color: green;
+    border: none;
+    height: 10vh;
+  }
+
+  
 
   @media only screen and (max-width: 768px) {
     .nav-bg {

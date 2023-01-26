@@ -643,9 +643,9 @@ body {
   .eventsDiv {
     width: ;
     margin-bottom: 24%;
-    border-top: 1px solid black;
-    border-right: 1px solid black;
-    border-left: 1px solid black;
+    border-top: 1px solid #dfdfdf;
+    border-right: 1px solid #dfdfdf;
+    border-left: 1px solid #dfdfdf;
   }
 
   .eventsImg {
@@ -653,11 +653,30 @@ body {
     height: 47%;
   }
 
-  .eventsSection .eventsDiv :nth-child(6) {
-    margin-bottom: 0;
-    padding-bottom: 6%;
-    height: 10%;
+  .eventsText {
+    margin: 5%;
   }
+
+  .eventsText p {
+    color: #a0a7ab;
+    font-size: medium;
+  }
+
+  .eventsSection .eventsDiv .eventsText h2 {
+    font-weight: 700;
+  }
+
+  .eventsSection .eventsDiv .eventsText p {
+    padding-top: 2%;
+    font-size: large;
+  }
+
+  .eventsSection .eventsDiv .eventsText p span {
+    color: #212529;
+    font-weight: 800;
+  }
+
+  
 
   .eventsSection .eventsDiv a {
     padding: 0;
@@ -671,7 +690,74 @@ body {
     color: green;
     border: none;
     height: 10vh;
+    background: #8B0000;
   }
+
+  .eventsSection .eventsDiv a button:hover {
+    background: #f4740b;
+  }
+
+  .eventsSection .eventsDiv a button {
+    transition: transform 0.3s;
+    /* other styles */
+  }
+  
+  .eventsSection .eventsDiv a button:hover {
+    transform: translateY(-5px);
+  }
+  
+  .eventsSection .eventsDiv a button:hover {
+    transform: translateY(0);
+  }
+
+  #footer {
+    justify-content: space-between;
+    padding: 10px 70px;
+    background: linear-gradient(green,red);
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    width: 100%;
+    height: 70px;
+}
+
+#footer .copyright{
+    margin: 0;
+    float: left;
+    width: 50%;
+    margin-top: .7em;
+}
+#footer .icons-contact{
+  display: flex;
+  float: right;
+  margin-top: .5em;
+}
+#footer .icon-contact {
+    margin: 0 3px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 2em;
+    
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(15px);
+  }
+  25% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(15px);
+  }
+}
+
 
   
 

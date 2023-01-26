@@ -109,5 +109,3 @@ function nextSlide() {
   currentSlideIndex = nextSlideIndex;
 }
 
-
-

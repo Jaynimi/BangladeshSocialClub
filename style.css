@@ -687,7 +687,7 @@ body {
     width: 100%;
     padding: 0;
     margin: 0;
-    color: green;
+    color: white;
     border: none;
     height: 10vh;
     background: #8B0000;
@@ -708,6 +708,11 @@ body {
   
   .eventsSection .eventsDiv a button:hover {
     transform: translateY(0);
+  }
+
+  .allEventDiv {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
 
   #footer {
@@ -740,18 +745,81 @@ body {
     
 }
 
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  justify-content: center;
+}
+
+.footerContainer .mainFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.footerContainer .mainFooter ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerContainer .mainFooter div ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+}
+
+.footerContainer .mainFooter div ul li {
+  padding: 1rem 1rem;
+  background-color: #333;
+}
+
+.footerContainer a {
+  color: #fff;
+  text-decoration: none;
+  background-color: #333;
+  border-radius: none;
+}
+
+.footerContainer a:hover {
+  background-color: #333;
+}
+
+.footerContainer .copyrightDiv {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: large;
+}
+
 @keyframes bounce {
   0% {
     transform: translateY(15px);
   }
-  25% {
-    transform: translateY(10px);
+  15% {
+    transform: translateX(5px);
   }
-  50% {
+  30% {
     transform: translateY(-15px);
   }
+  45% {
+    transform: translateX(5px);
+  }
+  60% {
+    transform: translateY(15px);
+  }
   75% {
-    transform: translateY(10px);
+    transform: translateY(-5px);
+  }
+  87% {
+    transform: translateX(5px);
   }
   100% {
     transform: translateY(15px);

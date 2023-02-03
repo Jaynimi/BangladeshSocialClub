@@ -772,13 +772,15 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  text-align: left;
   background-color: #333;
 }
 
 .footerContainer .mainFooter div ul li {
   padding: 1rem 1rem;
   background-color: #333;
+  justify-content: left;
 }
 
 .footerContainer a {
@@ -786,6 +788,12 @@ body {
   text-decoration: none;
   background-color: #333;
   border-radius: none;
+  padding: 0;
+}
+
+.footerContainer .fab, .footerContainer .fas {
+  padding: 0 8px 0 8px;
+  color: #44841a;
 }
 
 .footerContainer a:hover {

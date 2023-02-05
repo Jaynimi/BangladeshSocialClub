@@ -1,17 +1,23 @@
+.aboutSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5% 10%;
+}
+
 .About-Us {
-    width: 100%;
-    height: 550px;
+    margin-bottom: 150px;
 }
 
 .About-Us img {
-    width: 20%;
-    height: 500px;
+    width: 32%;
+    height: 87%;
     float: left;
     margin-right: 5em;
 }
 
 .About-Us .information {
-    width: 70%;
+    width: ;
     height: 600px;
     padding-left: 2em;
 }
@@ -36,6 +42,7 @@ button {
     border-color: black;
     border-radius: 20px ;
     padding: 10px;
+    margin: 8% 0 0 22%;
 }
 
 button:hover {
@@ -58,11 +65,14 @@ button:hover {
 
 .whatwedo .column {
     float: left;
-   
+    width: 30%;
 }
 
 .three-column {
     padding-top: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 h3 {
@@ -82,12 +92,9 @@ h3 {
 }
 
 .left, .middle, .right {
-    width: 33.33%;
+    width: 33.3%;
 }
 
-.right img {
-    margin-top: .5em;
-}
 
 /* Our Team Member */
 
@@ -100,6 +107,12 @@ h3 {
     text-align: center;
 }
 
+.team-member img {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .team-member .member {
     float: left;
    
@@ -107,25 +120,18 @@ h3 {
 
 .member-list {
     padding-top: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 
 
 .team-member img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    
 }
 
 .team-member:after {
     content:"";
     clear: both;
-}
-
-.left, .middle, .right {
-    width: 33.33%;
-}
-
-.right img {
-    margin-top: .5em;
 }

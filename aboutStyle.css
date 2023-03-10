@@ -9,23 +9,32 @@
     margin-bottom: 150px;
 }
 
+
 .About-Us img {
-    width: 32%;
-    height: 87%;
+    width: 38%;
+    height: 90%;
     float: left;
     margin-right: 5em;
+    border-radius: 50%;
 }
 
 .About-Us .information {
-    width: ;
-    height: 600px;
+    height: ;
     padding-left: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
-h2 {
-    color: red;
+.aboutUsHeader, .contact , .whatwedo h2, .team-member h2 {
+    color: #8B0000;
     font-weight: bold;
     font-size: 55px;
+}
+
+.aboutUsHeader {
 }
 
 p {
@@ -33,16 +42,16 @@ p {
 }
 
 button {
-    color: red;
+    color: #8B0000;
     font-weight: bold;
     background-color: white;
     text-decoration: none;
     font-size: 20px;
     width: 200px;
-    border-color: black;
+    border: 1px solid black;
     border-radius: 20px ;
     padding: 10px;
-    margin: 8% 0 0 22%;
+    margin-top: 8%;
 }
 
 button:hover {
@@ -56,7 +65,7 @@ button:hover {
 
 .whatwedo {
     width: 100%;
-    height: 550px;
+    margin-bottom: 20%;
 }
 
 .whatwedo h2, h3, .whatwedo p {
@@ -76,9 +85,10 @@ button:hover {
 }
 
 h3 {
-    color: red;
+    color: #8B0000;
     font-size: 25px;
     font-weight: bold;
+    margin-top: px;
 }
 
 .whatwedo img {
@@ -97,10 +107,9 @@ h3 {
 
 
 /* Our Team Member */
-
+   
 .team-member {
     width: 100%;
-    height: 600px;
 }
 
 .team-member h2, h3, .team-member p {
@@ -111,6 +120,7 @@ h3 {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 50%;
 }
 
 .team-member .member {
@@ -134,4 +144,57 @@ h3 {
 .team-member:after {
     content:"";
     clear: both;
+}
+
+
+@media only screen and (max-width: 769px) {
+    .About-Us {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .About-Us img {
+        margin: 0;
+        border-radius: 40%;
+        width: 100%;
+    }
+
+    .About-Us :first-child {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5%;
+    }
+
+    .three-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .whatwedo .column {
+       margin-bottom: 10%;
+       width: 80%;
+    }
+
+    .whatwedo img {
+        width: 100%;
+    }
+
+    .member-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .team-member .member {
+        margin-bottom: 15%;
+        width: 80%;
+    }
+
+    .team-member img {
+        width: 100%;
+    }
 }
